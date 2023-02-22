@@ -1,0 +1,239 @@
+ @media only screen and (min-width: 300px) and (max-width: 600px) {
+    body{
+        margin: 10px 8px 10px 8px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: rgb(232, 145, 237);
+        width: 92vw;
+    }
+    #left{
+        background-color: rgb(255, 0, 0);
+        margin: 0 1% 0 1%;
+        width: 98%;
+        height: 100%;
+    }
+    #right{
+        background-color: rgb(0, 98, 255);
+        margin: 0 1% 0 1%;
+        width: 98%;
+        height: 100%;
+    }
+
+ }
+
+  @media only screen and (min-width: 601px) and (max-width: 990px) {
+    body{
+        margin: 10px 8px 10px 8px;
+        height: 100vh;
+        background-color: rgb(245, 242, 245);
+        width: 95vw;
+    }
+
+
+  } 
+
+  @media only screen and (min-width: 991px) {
+    body{
+        margin: 10px 8px 10px 8px;
+        height: 100vh;
+        width: 97vw;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 25% 75%;
+        gap: 3px;
+    }
+
+    #top{
+        visibility: visible !important;
+        background-color: rgb(9, 78, 146);
+        grid-row-start: 1;
+        grid-row-end: 1;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        width: 100%;
+        height: 100%;
+        border-radius: 15px 15px 0 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    #title{
+        font-size: 20px;
+        color: rgb(238, 204, 132);
+        
+    }
+    #title span{
+        font-size: 15px;
+    }
+    #name{
+        font-size: 45px;
+        color: rgb(237, 196, 107);
+        text-transform: uppercase;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-title, .section-sub-title{
+        font-size: 25px;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: rgb(3, 6, 85);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-sub-title{
+        font-size: 15px;
+        line-height: 30px;
+        text-decoration: underline;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    }
+    #skills li, ol{
+        list-style-type: upper-roman;
+        color: rgb(44, 110, 216);
+    }
+   
+    #left{
+        background-color: rgb(251, 252, 244);
+        grid-row-start: 2;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        width: 100%;
+        height: auto;
+        border-radius: 0 0 0 8px;
+        flex: 1;
+    }
+    .contact{
+        border-bottom:solid black 3px;
+        padding: 30px 5px 20px 20px;
+        gap: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .fa-solid, .fa-brands{
+        color: rgb(27, 90, 194);
+        font-size: 30px;
+        padding: 8px;
+        border-radius: 20px;
+        width: 32px;
+    }
+    #education{
+        border-bottom:solid black 3px;
+        padding: 30px 5px 20px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 15px;
+        
+    }
+    #skills{
+        border-bottom:solid black 3px;
+        padding: 30px 5px 20px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 15px;
+        list-style: none;
+        
+    }
+    .school, .date, .major, .place{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .school{
+        font-size: 25px;
+        text-transform: capitalize;
+        margin-left: 20px;
+        
+    }
+    .place{
+        font-size: 20px;
+        margin-left: 30px;
+    }
+    .major{
+        font-size: 18px;
+        margin-left: 40px;
+    }
+    .date{
+        font-size: 15px;
+        margin-left: 0px;
+    }
+    
+    #right{
+        background-color: rgb(175, 175, 175);
+        grid-row-start: 2;
+        grid-row-end: 2;
+        grid-column-start: 2;
+        grid-column-end: 5;
+        width: 100%;
+        height: fit-content;
+        border-radius: 0 0 8px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #experience li{
+        line-height: 40px;
+        /* list-style-type: "\2705"; */
+        list-style: none;
+        padding-right: 20px;
+    }
+    #experience li::before {
+        content: '▶  ';
+      }
+    .employerName, .location,.position{
+        text-transform: capitalize;
+        font-family: 'Courier New', Courier, monospace;
+        text-indent: 10px;
+        line-height: 30px;
+        color: rgb(2, 3, 27);
+        font-weight: bolder;
+    }
+    .employerName{
+        margin-left: 20px;
+        font-size: 25px;
+        text-decoration: underline;
+    }
+    .location{
+        margin-left: 40px;
+        font-size: 20px;
+    }
+    .position{
+        margin-left: 50px;
+        font-size: 18px;
+    }
+    .date{
+        margin-left: 60px;
+        text-decoration: underline;
+    }
+    .responsibilities{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 17px;
+        text-decoration: underline;
+        text-transform: capitalize;
+        line-height: 30px;
+    }
+    
+    #summary ul, #platforms ul{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 100px;
+        gap: 20px;
+        list-style: none;
+    }
+
+     #summary ul{
+        list-style: square !important;
+     }
+     #platforms ul{
+        line-height: 50px;
+     }
+
+  }
