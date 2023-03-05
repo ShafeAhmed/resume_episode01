@@ -9,5 +9,5 @@
 ---
 *  **follow this link to view the rendered output**
     >* [Github pages](https://duckduckgo.com)
-    >* The output is **mobile friendly**
+    >* The output is not **mobile friendly**
 ---
